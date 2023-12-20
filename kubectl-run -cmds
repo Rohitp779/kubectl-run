@@ -9,3 +9,7 @@ minikube ssh
 curl -L http://10.244.0.3:8000   ---(( Change the ip address of pod running) 
 
 kubectl delete pod (pod-name)        --- ( for deletion of pod container )
+
+// for service creation use service.yaml then...
+
+kubectl get svc   //-----for fixed ip address
