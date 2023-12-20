@@ -13,3 +13,13 @@ kubectl delete pod (pod-name)        --- ( for deletion of pod container )
 // for service creation use service.yaml then...
 
 kubectl get svc   //-----for fixed ip address
+
+///---- NOW to access the service from outside of kubernetes  do this///
+
+kubectl edit svc
+
+//in that file add type: NodePort  and delete ClusterIP's   delete both ip's
+
+kubectl apply -f service.yaml
+
+minikube ip  // for access the app from outside
