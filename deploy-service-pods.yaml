@@ -28,7 +28,7 @@ spec:
   type: NodePort
   selector:
     app: todo-app
-sss ports:
+  ports:
       # By default and for convenience, the `targetPort` is set to the same value as the `port` field.
     - port: 80
       targetPort: 8000
