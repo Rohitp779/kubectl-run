@@ -26,5 +26,5 @@ minikube ip  // for access the app from outside
 
 minikube service (service-name) --url 
 
-kubectl port-forward --address 0.0.0.0 svc/(service-name) 300007:80
+kubectl port-forward --address 0.0.0.0 svc/(service-name) 30007:80
  
