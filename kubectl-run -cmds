@@ -23,3 +23,8 @@ kubectl edit svc
 kubectl apply -f service.yaml
 
 minikube ip  // for access the app from outside
+
+minikube service (service-name) --url 
+
+kubectl port-forward --address 0.0.0.0 svc/(service-name) 300007:80
+ 
