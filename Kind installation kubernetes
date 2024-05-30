@@ -1,0 +1,23 @@
+for linux installation we have some command to run direct and easy access
+
+# Installation on LINUX
+--> # For AMD64 / x86_64
+[ $(uname -m) = x86_64 ] && curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.23.0/kind-linux-amd64
+# For ARM64
+[ $(uname -m) = aarch64 ] && curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.23.0/kind-linux-arm64
+chmod +x ./kindkind create cluster --name kind-2
+sudo mv ./kind /usr/local/bin/kind
+kind create cluster --name kind-2
+
+# For creating a Kind cluster
+--> kind create cluster --name kind-2
+
+# Get Kind Cluster by cmd
+--> kind get clusters
+
+# check linke this 
+--> kubectl cluster-info --context kind-kind-2  #replace kind-2 name as per need.
+
+# for delete cluster 
+--> kind delete cluster
+
